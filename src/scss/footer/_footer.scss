@@ -1,0 +1,53 @@
+@import 'glob-var/_glob-var.scss';
+
+.footer{
+	background-color: $border-color-darck;
+	height: 450px;
+	padding-top: 75px;
+	color: $text-color-light;
+
+	.inner-footer{
+		margin: 0 auto;
+		width: 500px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	h2{
+		margin-bottom: 35px;
+		font-style: 18px;
+		text-transform: uppercase;
+	}
+
+	ul li {
+		padding-bottom: 5px;
+		padding-top: 5px;
+
+
+		a{
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	}
+
+	.conect-us{
+		a{
+			padding-bottom: 5px;
+			padding-left: 23px;
+			background-repeat: no-repeat;
+			background-position: 0% 40%;
+		}
+		.faceboock{
+			background-image: url(../img/fb-f.png);
+		}
+		.twitter{
+			background-image: url(../img/tw-f.png);
+		}
+		.google{
+			background-image: url(../img/gplus-f.png);
+		}
+		.linkedIn{
+			background-image: url(../img/in-f.png);
+		}
+	}
+}

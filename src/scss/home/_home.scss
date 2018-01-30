@@ -1,0 +1,54 @@
+@import 'glob-var/_glob-var.scss';
+
+.home{
+	background-color: $background-color-bright;
+	color: $text-color-light;
+	height: 130px;
+	display: flex;
+	justify-content: flex-end;
+
+		.navigation-wrap{
+			max-width: 1920px;
+			display: flex;
+			align-items: center;
+			padding-right: 14%;
+		}
+			.navigation{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 880px;
+				letter-spacing: 3px;
+			}
+				.sign-up{
+					
+					border: 1px solid $border-color-light;
+					border-radius: 18px;
+
+					a {
+						display: block;
+						padding: 5px 20px 5px 20px;
+					}
+				}
+
+				.tel{
+					font-size: 22px;
+				}
+
+				li.navigation-item{
+					font-size: 18px;
+					text-transform: uppercase;
+
+					a:hover {
+						text-decoration: underline;
+					}
+				}
+
+				.social-links{
+					display: flex;
+
+					li:not(:last-child){
+						margin-right: 5px;
+					}
+				}
+}

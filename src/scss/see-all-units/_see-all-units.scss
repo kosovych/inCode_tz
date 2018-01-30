@@ -1,0 +1,32 @@
+@import 'glob-var/_glob-var.scss';
+
+.see-all-units{
+	height: 65px;
+	background-color: $background-color-bright;
+	display: flex;
+	align-items: center;
+
+	.pagination{
+		width: 250px;
+		margin: 0 auto;
+		display: flex;
+		color: $text-color-light;
+		justify-content: space-between;
+		align-content: center;
+
+		.pages{
+			box-sizing: border-box;
+			width: 40px;
+			padding-top: 8px;
+			height: 40px;
+			border: 2px solid $border-color-light;
+			border-radius: 50%;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		.three-point {
+			padding-top: 13px;
+		}
+	}
+}

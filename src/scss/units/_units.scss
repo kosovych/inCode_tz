@@ -20,6 +20,31 @@
 
 		&:hover{
 			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.75);
+			.slide-btn {
+				display: block;
+			}
+
+		}
+		.unit-img{
+			position: relative;
+		}
+		.slide-btn {
+			position: absolute;
+			width: 11px;
+			height: 22px;
+			top: 50%;
+			display: none;
+			margin-top: -11px;
+			border: none;
+			cursor: pointer;
+		}
+		.slide-btn-left{
+			background-image: url(../img/arrow-left.png);
+			left: 0;
+		}
+		.slide-btn-right{
+			background-image: url(../img/arrow-right.png);
+			right: 0;
 		}
 		.unit-img img {
 			width: 100%;

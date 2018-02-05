@@ -1,7 +1,7 @@
 @import 'glob-var/_glob-var.scss';
 
 .search{
-	height: 150px;
+	height: 100px;
 	background-color: $background-color-darck;
 	color: $text-color-light;
 	display: flex;
@@ -25,6 +25,10 @@
 	align-items: flex-start;
 	width: 1366px;
 	margin: 0 auto;
+	}
+
+	.inner-search_center {
+		align-self: center;
 	}
 
 	h2 {
@@ -120,11 +124,11 @@
 		background-position: 0% 50%;
 		}
 
-		.make-select.honda-selected{
+		.make-select[data-selected="honda"]{
 		background-image: url(../img/honda.png);
 		}
 
-		.make-select.yamaha-selected{
+		.make-select[data-selected="yamaha"]{
 		background-image: url(../img/yamaha.png);
 		}
 	}
@@ -167,6 +171,7 @@
 				margin-left: -5px;
 				border-radius: 50%;
 				margin-top: -5px;
+				cursor: pointer;
 
 				&::after {
 					content: "500";
@@ -216,6 +221,8 @@
 				border-radius: 50%;
 				margin-right: -5px;
 				margin-top: -5px;
+				cursor: pointer;
+				
 
 				&::after {
 					content: "50.5k";

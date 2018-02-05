@@ -12,6 +12,12 @@
 			}
 	}
 
+@media all and (max-width: 1214px) {
+	.search{
+	height: 150px;
+	}
+}
+
 	.search{
 		.inner-search{
 			width: 95vw;
@@ -114,9 +120,11 @@
 
 		.search{
 			height: 30px;
+			flex-direction: column;
 
 			#show-search {
 				display: block;
+				align-self: center;
 			}
 		.inner-search{
 			display: none;
@@ -124,6 +132,7 @@
 			flex-wrap: wrap;
 
 			& > *:not(:last-child){
+				margin-top: 15px;
 				margin-right: 5px;
 			}
 			& > *{

@@ -2,7 +2,7 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -57,9 +57,9 @@
 			<div class="make">
 				<h2>Make</h2>
 				<select class="make-select">
-					<option value="Harley-Davidson" selected>Harley-Davidson</option>
-					<option value="Honda">Honda</option>
-					<option value="Yamaha">Yamaha</option>
+					<option value="harley-davidson" selected>Harley-Davidson</option>
+					<option value="honda">Honda</option>
+					<option value="yamaha">Yamaha</option>
 				</select>
 			</div>
 			
@@ -84,14 +84,18 @@
 				</div>
 			</div>
 			
-			<button class="search-btn">Search</button>
+			<button class="search-btn inner-search_center">Search</button>
 
 		</div>
 	</section>
 
 	<section class="units">
 		<div class="unit">
-			<div class="unit-img"><img src="img/moto.png" alt=""></div>
+			<div class="unit-img">
+				<button class="slide-btn slide-btn-left"><</button>
+				<img src="img/moto.png" alt="">
+				<button class="slide-btn slide-btn-right">></button>
+			</div>
 			<h2 class="unit-title">2015 Kawasaki Concours 14 ABS Touring</h2>
 			<div class="unit-info">
 				<p class="make">Make: <span class="unit-make">Kawasaki</span></p>
@@ -101,8 +105,8 @@
 				<p class="odometer">Odometer: <span class="unit-odometer">12000</span> KM</p>
 				<p class="average">Average: <span class="unit-average">$ 15,499.00</span></p>
 			</div>
-							<button class="make-offer">MAKE AN OFFER</button>
-			<button class="view-product">VIEW PRODUCT</button>
+							<button class="make-offer">MAKE AN OFFER &#x226B;</button>
+			<button class="view-product">VIEW PRODUCT &#x226B;</button>
 		</div>
 		<div class="unit">
 			<div class="unit-img"><img src="img/moto.png" alt=""></div>

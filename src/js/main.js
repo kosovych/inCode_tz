@@ -18,4 +18,20 @@ openSearch.onclick = function () {
 	}
 }
 
+var searchType = document.querySelector('.make-select');
 
+searchType.dataset.selected = searchType.selectedOptions[0].value;
+
+
+
+searchType.addEventListener('change', setDataAttr);
+
+
+
+function setDataAttr () {
+
+	var dataValue = searchType.selectedOptions[0].value;
+
+	searchType.dataset.selected = dataValue;
+
+}
